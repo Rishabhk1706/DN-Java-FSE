@@ -1,0 +1,65 @@
+Q. Explain Big O notation and how it helps in analyzing algorithms.
+
+Ans - Big O notation is a mathematical way to describe how the running time or memory usage of an algorithm grows as the input size (n) increases.
+
+It helps us:
+
+Measure the efficiency of algorithms.
+Compare different algorithms independently of hardware.
+Predict performance for large datasets.
+Choose the most suitable algorithm for a problem.
+
+Linear Search:
+
+for(int i = 0; i < n; i++){
+    if(arr[i] == key){
+        return i;
+    }
+}
+
+In the worst case, the loop checks all n elements.
+Time Complexity = O(n)
+
+Q. Describe the best, average, and worst-case scenarios for search operations.
+
+Ans - These scenarios describe how an algorithm performs under different conditions.
+
+A. Best Case
+
+The minimum amount of work required.
+
+Linear Search Example: 
+arr = [10, 20, 30, 40, 50]
+key = 10
+
+The element is found at the first position.
+
+Comparisons = 1
+Time Complexity = O(1)
+
+B. Average Case
+
+The expected performance when the element may appear anywhere.
+
+Linear Search Example: 
+arr = [10, 20, 30, 40, 50]
+key = 30
+
+The element is found somewhere in the middle.
+
+Average comparisons ≈ n/2
+Time Complexity = O(n)
+
+C. Worst Case
+
+The maximum amount of work required.
+
+Linear Search Example
+arr = [10, 20, 30, 40, 50]
+key = 50
+
+or the element is not present.
+
+key = 60
+Comparisons = n
+Time Complexity = O(n)

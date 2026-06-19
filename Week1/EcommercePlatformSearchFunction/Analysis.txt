@@ -1,0 +1,23 @@
+Q - Compare the time complexity of linear and binary search algorithms.
+
+Ans - Linear Search works by checking each element one by one from the beginning of the array until the target element is found or the array ends. Since it may need to examine every element in the worst case, its time complexity is:
+
+Best Case: O(1) (element found at the first position)
+Average Case: O(n)
+Worst Case: O(n) (element is at the last position or not present)
+
+For example, if an e-commerce platform contains 10,000 products, a linear search may require checking all 10,000 products before determining whether the desired product exists.
+
+Binary Search, on the other hand, works only on a sorted array. It repeatedly divides the search space into two halves and eliminates the half that cannot contain the target element. This significantly reduces the number of comparisons required.
+
+Best Case: O(1) (element found at the middle position)
+Average Case: O(log n)
+Worst Case: O(log n)
+
+For the same dataset of 10,000 products, Binary Search would require approximately log₂(10000) ≈ 14 comparisons, which is far fewer than Linear Search.
+
+
+
+Q - Discuss which algorithm is more suitable for your platform and why?
+
+Ans - For an e-commerce platform, Binary Search is more suitable because product catalogs can contain thousands or millions of products. Its O(log n) time complexity makes searches significantly faster than Linear Search's O(n) complexity. However, products must be maintained in sorted order before performing binary search.
