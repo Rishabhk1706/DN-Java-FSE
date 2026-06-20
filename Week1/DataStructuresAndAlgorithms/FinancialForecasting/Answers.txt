@@ -1,0 +1,28 @@
+Q - Explain the concept of recursion and how it can simplify certain problems.
+
+Ans - Recursion is a programming technique where a function calls itself to solve smaller instances of the same problem.
+It consists of:
+Base Case → Stops recursion (prevents infinite calls).
+Recursive Case → Breaks the problem into smaller subproblems.
+
+Example Idea:
+Instead of calculating future value using loops, recursion repeatedly applies the growth formula until the desired time period is reached.
+
+How recursion helps:
+Makes problems like repeated growth easier to express
+Breaks complex problems into smaller, manageable steps
+Useful for mathematical definitions (like compound growth)
+
+Q - Discuss the time complexity of your recursive algorithm.
+
+Ans - Each recursive call reduces years by 1
+Total number of calls = n
+Time Complexity = O(n)
+Space Complexity = O(n) (due to recursion stack)
+
+Q - Explain how to optimize the recursive solution to avoid excessive computation.
+
+Ans - The recursive solution can be optimized by avoiding repeated function calls and reducing memory usage.
+This can be achieved using memoization to store previously computed results or by replacing recursion with an iterative approach.
+For financial forecasting, using the formula FV = PV × (1 + r)^n with Math.pow() is the most efficient method,
+as it reduces computation time and avoids stack overflow issues.
