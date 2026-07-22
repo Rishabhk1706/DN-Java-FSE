@@ -1,0 +1,13 @@
+.container {
+  margin: 80px 0 0 180px;
+}
+
+h1 {
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  padding: 5px 12px;
+  cursor: pointer;
+}
