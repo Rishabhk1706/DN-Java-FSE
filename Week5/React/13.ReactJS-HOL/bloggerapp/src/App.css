@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+}
+
+.mystyle1,
+.st2,
+.v1 {
+  padding: 20px;
+}
+
+.st2 {
+  border-left: 4px solid green;
+}
+
+.v1 {
+  border-left: 4px solid green;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+h4 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
