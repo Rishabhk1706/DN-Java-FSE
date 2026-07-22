@@ -1,0 +1,24 @@
+.container {
+    margin: 30px;
+}
+
+.officeContainer {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.officeCard {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.textRed {
+    color: red;
+}
+
+.textGreen {
+    color: green;
+}
